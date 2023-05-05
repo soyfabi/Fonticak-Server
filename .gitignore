@@ -375,13 +375,13 @@ BackupMap
 Client Fonticak/
 Client Fonticak
 Client Fonticak.rar
-fonticakmapglobal
+fonticakmapglobal.otbm
+MapFonticak.otbm
 items.rar
 OTR
 OTR/
 *.ini
 *.otb
-*.otbm
 *.exe
 *.manifest
 # SFTP for Sublime
