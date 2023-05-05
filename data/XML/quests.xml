@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+	<quest name="Example" startstorageid="90" startstoragevalue="1">
+		<mission name="Example" storageid="90" startvalue="1" endvalue="4">
+			<missionstate id="1" description="The mission should be simple to fulfil. You have to seek out Uzgod in Kazordoon and get the pickaxe for us. Or just find dwarven pickaxe on your own..." />
+			<missionstate id="2" description="Get into Dwacatra and bring family brooch back to Uzgod." />
+			<missionstate id="3" description="Bring the pickaxe back to the Explorer Society representative." />
+		</mission>
+	</quest>
+</quests>

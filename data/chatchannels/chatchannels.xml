@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+	<channel id="2" name="Global Chat" public="1" script="worldchat.lua" />
+	<channel id="3" name="Advertising" public="1" script="advertising.lua" />
+	<channel id="4" name="Help" public="1" script="help.lua" />
+	<channel id="5" name="Loot Channel" script="loot.lua" />
+	<channel id="6" name="Quests" script="quests.lua" />
+	<channel id="7" name="Trade Market" script="trade_market.lua" />
+	<channel id="8" name="Changelog" script="Changelog.lua" />
+	<channel id="10" name="Guilds Leaders" script="guildleader.lua" />
+	<channel id="11" name="Tasks" script="tasks.lua" />
+	<channel id="12" name="Death Channel" script="death_channel.lua" />
+</channels>

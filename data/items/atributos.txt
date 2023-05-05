@@ -1,0 +1,97 @@
+	{"healthgain", ITEM_PARSE_HEALTHGAIN},
+	{"healthticks", ITEM_PARSE_HEALTHTICKS},
+	{"criticalhitchance", ITEM_PARSE_CRITICALHITCHANCE},
+	{"criticalhitamount", ITEM_PARSE_CRITICALHITAMOUNT},
+	{"lifeleechchance", ITEM_PARSE_LIFELEECHCHANCE},
+	{"lifeleechamount", ITEM_PARSE_LIFELEECHAMOUNT},
+	{"manaleechchance", ITEM_PARSE_MANALEECHCHANCE},
+	{"manaleechamount", ITEM_PARSE_MANALEECHAMOUNT},
+	
+	
+	
+	
+	{"absorbpercentall", ITEM_PARSE_ABSORBPERCENTALL},
+	{"absorbpercentallelements", ITEM_PARSE_ABSORBPERCENTALL},
+	{"absorbpercentelements", ITEM_PARSE_ABSORBPERCENTELEMENTS},
+	{"absorbpercentmagic", ITEM_PARSE_ABSORBPERCENTMAGIC},
+	{"absorbpercentenergy", ITEM_PARSE_ABSORBPERCENTENERGY},
+	{"absorbpercentfire", ITEM_PARSE_ABSORBPERCENTFIRE},
+	{"absorbpercentpoison", ITEM_PARSE_ABSORBPERCENTPOISON},
+	{"absorbpercentearth", ITEM_PARSE_ABSORBPERCENTPOISON},
+	{"absorbpercentice", ITEM_PARSE_ABSORBPERCENTICE},
+	{"absorbpercentholy", ITEM_PARSE_ABSORBPERCENTHOLY},
+	{"absorbpercentdeath", ITEM_PARSE_ABSORBPERCENTDEATH},
+	{"absorbpercentlifedrain", ITEM_PARSE_ABSORBPERCENTLIFEDRAIN},
+	{"absorbpercentmanadrain", ITEM_PARSE_ABSORBPERCENTMANADRAIN},
+	{"absorbpercentdrown", ITEM_PARSE_ABSORBPERCENTDROWN},
+	{"absorbpercentphysical", ITEM_PARSE_ABSORBPERCENTPHYSICAL},
+	{"absorbpercenthealing", ITEM_PARSE_ABSORBPERCENTHEALING},
+	{"absorbpercentundefined", ITEM_PARSE_ABSORBPERCENTUNDEFINED},
+	
+	
+	{"reflectpercentall", ITEM_PARSE_REFLECTPERCENTALL},
+	{"reflectpercentallelements", ITEM_PARSE_REFLECTPERCENTALL},
+	{"reflectpercentelements", ITEM_PARSE_REFLECTPERCENTELEMENTS},
+	{"reflectpercentmagic", ITEM_PARSE_REFLECTPERCENTMAGIC},
+	{"reflectpercentenergy", ITEM_PARSE_REFLECTPERCENTENERGY},
+	{"reflectpercentfire", ITEM_PARSE_REFLECTPERCENTFIRE},
+	{"reflectpercentpoison", ITEM_PARSE_REFLECTPERCENTEARTH},
+	{"reflectpercentearth", ITEM_PARSE_REFLECTPERCENTEARTH},
+	{"reflectpercentice", ITEM_PARSE_REFLECTPERCENTICE},
+	{"reflectpercentholy", ITEM_PARSE_REFLECTPERCENTHOLY},
+	{"reflectpercentdeath", ITEM_PARSE_REFLECTPERCENTDEATH},
+	{"reflectpercentlifedrain", ITEM_PARSE_REFLECTPERCENTLIFEDRAIN},
+	{"reflectpercentmanadrain", ITEM_PARSE_REFLECTPERCENTMANADRAIN},
+	{"reflectpercentdrown", ITEM_PARSE_REFLECTPERCENTDROWN},
+	{"reflectpercentphysical", ITEM_PARSE_REFLECTPERCENTPHYSICAL},
+	{"reflectpercenthealing", ITEM_PARSE_REFLECTPERCENTHEALING},
+	{"reflectchanceall", ITEM_PARSE_REFLECTCHANCEALL},
+	{"reflectchanceallelements", ITEM_PARSE_REFLECTCHANCEALL},
+	{"reflectchanceelements", ITEM_PARSE_REFLECTCHANCEELEMENTS},
+	{"reflectchancemagic", ITEM_PARSE_REFLECTCHANCEMAGIC},
+	{"reflectchanceenergy", ITEM_PARSE_REFLECTCHANCEENERGY},
+	{"reflectchancefire", ITEM_PARSE_REFLECTCHANCEFIRE},
+	{"reflectchancepoison", ITEM_PARSE_REFLECTCHANCEEARTH},
+	{"reflectchanceearth", ITEM_PARSE_REFLECTCHANCEEARTH},
+	{"reflectchanceice", ITEM_PARSE_REFLECTCHANCEICE},
+	{"reflectchanceholy", ITEM_PARSE_REFLECTCHANCEHOLY},
+	{"reflectchancedeath", ITEM_PARSE_REFLECTCHANCEDEATH},
+	{"reflectchancelifedrain", ITEM_PARSE_REFLECTCHANCELIFEDRAIN},
+	{"reflectchancemanadrain", ITEM_PARSE_REFLECTCHANCEMANADRAIN},
+	{"reflectchancedrown", ITEM_PARSE_REFLECTCHANCEDROWN},
+	{"reflectchancephysical", ITEM_PARSE_REFLECTCHANCEPHYSICAL},
+	{"reflectchancehealing", ITEM_PARSE_REFLECTCHANCEHEALING},
+	
+	local item = player:addItem(8877, 1)
+	if item then
+		item:setBoostPercent(COMBAT_PHYSICALDAMAGE, 200)
+			item:setReflect(COMBAT_PHYSICALDAMAGE, {percent = 10, chance = 100})
+	end
+	
+	New lua methods:
+	-------------------------------------------
+	item:setReflect(combatType, reflect)
+	item:getReflect(combatType, total = true)
+    -------------------------------------------
+	reflect = {percent = 0, chance = 0}
+	-------------------------------------------
+	item:setBoostPercent(combatType, value)
+	item:getBoostPercent(combatType, total = true)
+	
+	
+	{"boostpercentall", ITEM_PARSE_BOOSTPERCENTALL},
+	{"boostpercentallelements", ITEM_PARSE_BOOSTPERCENTALL},
+	{"boostpercentelements", ITEM_PARSE_BOOSTPERCENTELEMENTS},
+	{"boostpercentmagic", ITEM_PARSE_BOOSTPERCENTMAGIC},
+	{"boostpercentenergy", ITEM_PARSE_BOOSTPERCENTENERGY},
+	{"boostpercentfire", ITEM_PARSE_BOOSTPERCENTFIRE},
+	{"boostpercentpoison", ITEM_PARSE_BOOSTPERCENTEARTH},
+	{"boostpercentearth", ITEM_PARSE_BOOSTPERCENTEARTH},
+	{"boostpercentice", ITEM_PARSE_BOOSTPERCENTICE},
+	{"boostpercentholy", ITEM_PARSE_BOOSTPERCENTHOLY},
+	{"boostpercentdeath", ITEM_PARSE_BOOSTPERCENTDEATH},
+	{"boostpercentlifedrain", ITEM_PARSE_BOOSTPERCENTLIFEDRAIN},
+	{"boostpercentmanadrain", ITEM_PARSE_BOOSTPERCENTMANADRAIN},
+	{"boostpercentdrown", ITEM_PARSE_BOOSTPERCENTDROWN},
+	{"boostpercentphysical", ITEM_PARSE_BOOSTPERCENTPHYSICAL},
+	{"boostpercenthealing", ITEM_PARSE_BOOSTPERCENTHEALING},
