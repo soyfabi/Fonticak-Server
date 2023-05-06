@@ -384,7 +384,6 @@ items.rar
 OTR
 OTR/
 *.ini
-*.otb
 *.exe
 *.manifest
 # SFTP for Sublime
