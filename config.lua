@@ -81,7 +81,7 @@ timeBetweenExActions = 0
 
 -- Map
 -- NOTE: set mapName WITHOUT .otbm at the end
-mapName = "MapFonticak"
+mapName = "otservbr"
 mapAuthor = "Fabián Marzán"
 
 -- checkDuplicateStorageKeys checks the values stored in the variables for duplicates.

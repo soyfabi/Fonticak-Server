@@ -17,7 +17,7 @@ event.onMoveItem = function(self, item, count, fromPosition, toPosition, fromCyl
 	
 	-- Player Corpse Container --
 	if fromCylinder and fromCylinder:isItem() then
-        if fromCylinder:getId() == 3065 or 3058 then
+        if fromCylinder:getId() == 3065 then
             if toCylinder ~= fromCylinder then
                 self:say(string.format("x%d %s", count, item:getName()), TALKTYPE_MONSTER_SAY, false, nil, fromCylinder:getPosition())
             end
