@@ -53,3 +53,35 @@ function Tile.isWalkable(self)
 	end
 	return true
 end
+
+function Tile.isHouse(self)
+	local house = self:getHouse()
+	return not not house
+end
+
+function Tile.isPz(self)
+	return self:hasFlag(TILESTATE_PROTECTIONZONE)
+end
+
+function Tile:isRopeSpot()
+	if not self then
+		return false
+	end
+
+	if not self:getGround() then
+		return false
+	end
+
+	if table.contains(ropeSpots, self:getGround():getId()) then
+		return true
+	end
+
+	for i = 1, self:getTopItemCount() do
+		local thing = self:getThing(i)
+		if thing and table.contains(specialRopeSpots, thing:getId()) then
+			return true
+		end
+	end
+
+	return false
+end

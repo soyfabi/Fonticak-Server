@@ -1,5 +1,7 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <monsters>
+<!--
 	<monster name="a carved stone tile" file="monsters/a_carved_stone_tile.xml" />
 	<monster name="A Shielded Astral Glyph" file="monsters/a_shielded_astral_glyph.xml" />
 	<monster name="Abyssador" file="monsters/abyssador.xml" />
@@ -1246,4 +1248,5 @@
 	<monster name="Zugurosh" file="monsters/zugurosh.xml" />
 	<monster name="Zulazza The Corruptor" file="monsters/zulazza_the_corruptor.xml" />
 	<monster name="Zushuka" file="monsters/zushuka.xml" />
+	-->
 </monsters>

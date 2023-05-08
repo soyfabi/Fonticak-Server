@@ -23,5 +23,5 @@ function changeGold.onUse(player, item, fromPosition, target, toPosition, isHotk
 	return true
 end
 
-changeGold:id(ITEM_GOLD_COIN, ITEM_PLATINUM_COIN, ITEM_CRYSTAL_COIN, ITEM_INGOT_DIAMOND, ITEM_INGOT_PLATINUM)
+changeGold:id(ITEM_GOLD_COIN, ITEM_PLATINUM_COIN, ITEM_CRYSTAL_COIN) --ITEM_INGOT_DIAMOND, ITEM_INGOT_PLATINUM)
 changeGold:register()

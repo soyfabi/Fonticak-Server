@@ -1,9 +1,3 @@
---[[
-    Little Quest Chests
-    Create By: 𝓜𝓲𝓵𝓵𝓱𝓲𝓸𝓻𝓮 𝓑𝓣
-    TFS Version: 1.5
-]]--
-
 local storageBase = 9000000
 local actionId = 2000
 

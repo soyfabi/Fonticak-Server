@@ -1,0 +1,2 @@
+Al usar player:addItem(itemid, count) y tienes el backpack lleno, no suelta el item en el suelo
+

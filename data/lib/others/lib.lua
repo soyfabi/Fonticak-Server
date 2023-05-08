@@ -15,6 +15,9 @@ dofile('data/lib/custom/guild_level.lua')
 -- Reward Boss
 dofile('data/lib/custom/rewardBoss.lua')
 
+-- Reward Boss
+dofile('data/lib/custom/exercise_training.lua')
+
 
 
 

@@ -1,6 +1,13 @@
 local event = Event()
 event.onStepTile = function(self, fromPosition, toPosition)
-	--self:say("test")
+	-- Exercise weapons
+	local playerId = self:getId()
+	if onExerciseTraining[playerId] then
+		LeaveTraining(playerId)
+		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can't move, the training has stopped.")
+		return true
+	end
+	
 	return true
 end
 

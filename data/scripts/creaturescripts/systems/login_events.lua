@@ -12,6 +12,12 @@ function loginEvents.onLogin(player)
 		player:sendTextMessage(MESSAGE_STATUS_BLUE_LIGHT, "Your Bank Balance is: {"..player:getBankBalance().."}.")
 	end
 	
+	if onExerciseTraining[player:getId()] then -- onLogin & onLogout
+		stopEvent(onExerciseTraining[player:getId()].event)
+		onExerciseTraining[player:getId()] = nil
+		--player:setTraining(false)
+	end
+	
 	-- Inbox Notice --
 	local inboxItems = player:getInbox():getItemHoldingCount()
 	if inboxItems > 0 then

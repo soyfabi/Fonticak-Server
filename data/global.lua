@@ -1,6 +1,11 @@
 math.randomseed(os.time())
 dofile('data/lib/others/lib.lua')
 
+-- Exercise Training
+if onExerciseTraining == nil then
+	onExerciseTraining = {}
+end
+
 function getDistanceBetween(firstPosition, secondPosition)
 	local xDif = math.abs(firstPosition.x - secondPosition.x)
 	local yDif = math.abs(firstPosition.y - secondPosition.y)

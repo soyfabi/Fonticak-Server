@@ -1,15 +1,19 @@
-local goldfishBowl = Action()
+local catchFish = Action()
 
-function goldfishBowl.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	if target.itemid ~= 5554 then
+function catchFish.onUse(player, item, fromPosition, target, toPosition, isHotkey)
+	if target.itemid ~= 5553 then
 		return false
 	end
 
-	target:remove(1)
+	if math.random(10) ~= 1 then
+		player:say("The golden fish escaped.", TALKTYPE_MONSTER_SAY)
+		return true
+	end
+	player:say("You catch a golden fish in the bowl.", TALKTYPE_MONSTER_SAY)
 	item:transform(5929)
-	player:addAchievement("Silent Pet")
+	toPosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	return true
 end
 
-goldfishBowl:id(5928)
-goldfishBowl:register()
+catchFish:id(5928)
+catchFish:register()
