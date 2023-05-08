@@ -141,3 +141,11 @@ function Position.getTile(self)
     return Tile(self)
 end
 
+function roomIsOccupied(centerPosition, rangeX, rangeY)
+	local spectators = Game.getSpectators(centerPosition, false, false, rangeX, rangeX, rangeY, rangeY)
+	if #spectators ~= 0 then
+		return true
+	end
+	return false
+end
+
