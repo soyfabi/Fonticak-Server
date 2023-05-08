@@ -25,7 +25,7 @@ function adventurersStone.onUse(player, item, fromPosition, target, toPosition, 
 	local playerPos, isInTemple, temple, townId = player:getPosition(), false
 	for i = 1, #setting do
 		temple = setting[i]
-		if isInRange(playerPos, temple.fromPos, temple.toPos) then
+		if playerPos:isInRange(temple.fromPos, temple.toPos) then
 			if Tile(playerPos):hasFlag(TILESTATE_PROTECTIONZONE) then
 				isInTemple, townId = true, temple.townId
 				break

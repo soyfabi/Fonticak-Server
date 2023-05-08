@@ -99,7 +99,7 @@ monster.attacks = {
 monster.defenses = {
 	defense = 60,
 	armor = 82,
-	{name ="speed", interval = 1000, chance = 10, speed = {min = -400, max = -400}, effect = CONST_ME_POFF, target = false, duration = 4000}
+	{name ="speed", interval = 1000, chance = 10, speedChange = 400, effect = CONST_ME_POFF, target = false, duration = 4000}
 }
 
 monster.elements = {
